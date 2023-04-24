@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { publicClient } from './utils/client'
+
+async function getSomething() {  
+  const output = await publicClient.getBlockNumber()
+  console.log(output)
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header className="app-header">
+        This is Header
       </header>
+      <div className="app-content">
+        <button onClick={() => getSomething()}>
+          Click This Button
+        </button>
+      </div>
     </div>
   );
 }
