@@ -39,7 +39,7 @@ In the whole process, neither Alice nor Shop had access to the specific content 
 
 Now, we have minimized the exposure of personal information.
 
-While this is a simple example and covers only one scenario, there is definitely a lot of room for improvement in this approach, and many other scenarios could be applicable. That's it for now, very glad to share my thoughts here.
+While this is a simple example and covers only one scenario, there is definitely a lot of room for improvement in this approach, and many other scenarios could be applicable. Welcome to leave me a message [here](https://discuss.ens.domains/t/a-way-to-minimize-the-exposure-of-personal-information-using-ens/16971).
 
 ## Sample Code
 
