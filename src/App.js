@@ -1,9 +1,17 @@
-import { publicClient } from './utils/client'
+import { publicClient, walletClient } from './utils/client'
 
-async function getSomething() {  
-  const output = await publicClient.getBlockNumber()
-  console.log(output)
+async function getSomething() {
+  const [accounts] = await walletClient.requestAddresses() 
+  console.log(accounts)
+
+  const name = await publicClient.getEnsName({
+    address: accounts
+  })
+  console.log(name)
+  
 }
+
+
 
 function App() {
   return (
@@ -12,8 +20,9 @@ function App() {
         This is Header
       </header>
       <div className="app-content">
+        <input id="info" placeholder="Type a piece of information here" />
         <button onClick={() => getSomething()}>
-          Click This Button
+          Then Click This Button
         </button>
       </div>
     </div>
