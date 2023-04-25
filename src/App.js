@@ -76,7 +76,8 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        Minimize Exposure Demo
+        <h1>Minimize Exposure Demo</h1>
+        <span>Test Requirement: Metamask on Goerli</span>
       </header>
       <div className="app-content">
         <textarea onChange={handleChange} placeholder="Type a piece of information here"></textarea>
